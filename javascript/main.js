@@ -21,7 +21,7 @@ document.querySelectorAll('.btnDetail').forEach(item => {
         document.querySelector('.modalHarga').innerHTML = harga;
 
         const nohp = '81218003778';
-        let pesan = `https://api.whatsapp.com/send?phone=${nohp}&text=Mba Pure, saya mau pesan ini ${gambar}`;
+        let pesan = `https://api.whatsapp.com/send?phone=${nohp}&text=Mba Pure, saya mau pesan ${judul} Jumlahnya `;
 
         document.querySelector('.btnBeli').href = pesan;
     });
