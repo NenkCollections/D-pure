@@ -21,7 +21,9 @@ document.querySelectorAll('.btnDetail').forEach(item => {
         document.querySelector('.modalHarga').innerHTML = harga;
 
         const nohp = '81218003778';
-        let pesan = `https://api.whatsapp.com/send?phone=${nohp}&text=Mba Pure, saya mau pesan ${judul} Jumlahnya `;
+        const qrcode = 'https://raw.githubusercontent.com/NenkCollections/D-pure/main/images/qrcode.svg' ;
+        let pesan = `https://api.whatsapp.com/send?phone=${nohp}&text=Mba Pure, saya mau pesan ${judul} Jumlahnya () Porsi
+        pembayaran bisa melalui ${qrcode}`;
 
         document.querySelector('.btnBeli').href = pesan;
     });
